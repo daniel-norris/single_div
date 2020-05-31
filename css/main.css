@@ -10,14 +10,14 @@
 }
 
 @font-face {
-    src: url(../assets/fonts/Dosis-Medium.ttf) format("truetype");
+    src: url(../assets/fonts/Dosis-light.ttf) format("truetype");
     font-family: dosis; 
     font-weight: 400;
 } 
 
 .background {
     background-color: #B0C4DE; 
-    width: 100%; 
+    width: 50%; 
     height: 100vh; 
 }
 
@@ -25,85 +25,54 @@ div {
     width: 75px; 
     height: 275px; 
     background-color: rgb(0, 0, 0);
-
-
     position: absolute; 
     top: 25%; 
-    left: 45%; 
+    left: 47.5%; 
   
     /* strap */ 
     background: linear-gradient(to bottom, 
-                rgba(132,132,132,1) 2%, 
-                rgba(16,16,16,1) 8%, 
-                rgba(16,16,16,1) 19%, 
-                /* rgba(44,44,44,1) 20%, 
-                rgba(44,44,44,1) 22%,  */
-                rgba(16,16,16,1) 23%, 
-                rgba(16,16,16,1) 77%, 
-                /* rgba(44,44,44,1) 78%, 
-                rgba(44,44,44,1) 80%,  */
-                rgba(16,16,16,1) 81%, 
-                rgba(16,16,16,1) 96%, 
-                rgba(41,41,41,1) 100%); 
+        rgba(132,132,132,1) 2%, 
+        rgba(16,16,16,1) 8%, 
+        rgba(16,16,16,1) 19%, 
+        rgba(16,16,16,1) 23%, 
+        rgba(16,16,16,1) 77%, 
+        rgba(16,16,16,1) 81%, 
+        rgba(16,16,16,1) 96%, 
+        rgba(41,41,41,1) 100%); 
 
-    border-radius: 50% 50% 50% 50% / 2% 2% 2% 2%;
-
-    /* box-shadow:  */
-
-    /* strap */ 
-                         
-    /*  0px 258px 0px 0px rgb(44, 44, 44, 1),
-        0px 249px 0px 0px rgb(44, 44, 44, 1),
-        0px 240px 0px 0px rgb(44, 44, 44, 1),
-        0px 231px 0px 0px rgb(44, 44, 44, 1),
-        0px 222px 0px 0px rgb(44, 44, 44, 1),
-        0px 213px 0px 0px rgb(44, 44, 44, 1),
-        0px 204px 0px 0px rgb(44, 44, 44, 1),
-        0px 195px 0px 0px rgb(44, 44, 44, 1),
-
-        0px 72px 0px 0px rgb(44, 44, 44, 1),
-        0px 63px 0px 0px rgb(44, 44, 44, 1),
-        0px 54px 0px 0px rgb(44, 44, 44, 1),
-        0px 45px 0px 0px rgb(44, 44, 44, 1),
-        0px 36px 0px 0px rgb(44, 44, 44, 1),
-        0px 27px 0px 0px rgb(44, 44, 44, 1),
-        0px 18px 0px 0px rgb(44, 44, 44, 1), 
-        0px 10px 0px 0px rgb(44, 44, 44, 1);
-    */            
+    border-radius: 50% 50% 50% 50% / 2% 2% 2% 2%;           
 }
 
 div::before {
     content: "913"; 
     font-family: dosis;
-    text-shadow: 45px 45px #cbcbcb;
+    text-shadow: 47.5px 45px #cbcbcb;
     color: rgba(0, 0, 0, 0); 
     font-size: 300%; 
     width: 150px;
     height: 150px; 
-    
     position: absolute; 
     right: -37.5px; 
     top: 62.5px; 
 
-    background-image: 
-        /* dial */ 
-        radial-gradient(circle at center, 
-            rgba(19,19,19,1) 0%, 
-            rgba(19,19,19,1) 50%, 
-            rgba(0,0,0,1) 50%, 
-            rgba(0,0,0,1) 60%, 
-            rgba(77,77,77,1) 60%, 
-            rgba(77,77,77,1) 61%, 
-            rgba(0,0,0,1) 61%, 
-            rgba(0,0,0,1) 62%, 
-            rgba(77,77,77,1) 62%, 
-            rgba(77,77,77,1) 65%, 
-            rgba(0,0,0,1) 65%, 
-            rgba(0,0,0,1) 66%, 
-            rgba(57,57,57,1) 66%, 
-            rgba(57,57,57,1) 69%, 
-            rgba(36,36,36,1) 69%, 
-            transparent 69%);
+    /* dial */ 
+    background-image: radial-gradient(circle at center, 
+        rgba(19,19,19,1) 0%, 
+        rgba(19,19,19,1) 50%, 
+        rgba(0,0,0,1) 50%, 
+        rgba(0,0,0,1) 60%, 
+        rgba(77,77,77,1) 60%, 
+        rgba(77,77,77,1) 61%, 
+        rgba(0,0,0,1) 61%, 
+        rgba(0,0,0,1) 62%, 
+        rgba(77,77,77,1) 62%, 
+        rgba(77,77,77,1) 65%, 
+        rgba(0,0,0,1) 65%, 
+        rgba(0,0,0,1) 66%, 
+        rgba(57,57,57,1) 66%, 
+        rgba(57,57,57,1) 69%, 
+        rgba(36,36,36,1) 69%, 
+        transparent 69%);
 } 
 
 /* strap */
@@ -119,7 +88,6 @@ div::after {
     width: 35px; 
     height: 2px; 
     box-shadow: 
-
         /* loops in straps */ 
         112.5px 113px 0px .3px #2b2b2b,
         112.5px 112px 0px .9px #000,
@@ -136,7 +104,7 @@ div::after {
         112.5px 150px 0px 3.5px #000000,
         112.5px 149px 0px 3.5px #ffffff62, 
         
-        /* lower straps */ 
+        /* lower strap loops */ 
         112.5px 344px 0px 3.5px #2b2b2b,
         112.5px 346px 0px 3.5px #000000,
         112.5px 356.5px 0px 2.5px #2b2b2b,
@@ -145,9 +113,6 @@ div::after {
         112.5px 370px 0px 2.5px #000,
         112.5px 378px 0px 1px #2b2b2b,
         112.5px 379px 0px 2px #000;
-
-        /* fix blocks in dial */ 
-
 
     border-radius: 50% 50% 50% 50% / 24% 24% 24% 24%;
 }
