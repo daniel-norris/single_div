@@ -1,0 +1,105 @@
+.background {
+    width: 50%; 
+    min-height: 400px; 
+    margin-left: 50%; 
+    margin-top: 20%; 
+    background: #f3c114; 
+    position: relative; 
+}
+
+#crayon {
+    background: #f3c114; 
+
+} 
+
+div {
+    width: 250px; 
+    height: 40px; 
+    margin-left: -110px; 
+    margin-top: -20px;
+
+    position: relative;  
+ 
+ 
+    background: #237449;
+    background-image:   
+                        /* printed ellipse */
+                        radial-gradient(ellipse at top, 
+                            rgba(0, 0, 0, 0.6) 50px, 
+                            transparent 50px),   
+
+                        /* dark stripes */ 
+                        linear-gradient(to right,
+                            transparent 25px,
+                            rgba(0, 0, 0, 0.6) 25px,
+                            rgba(0, 0, 0, 0.6) 30px,
+                            transparent 30px,
+                            transparent 35px,
+                            rgba(0, 0, 0, 0.6) 35px,
+                            rgba(0, 0, 0, 0.6) 40px,
+                            transparent 40px,
+                            transparent 210px,
+                            rgba(0, 0, 0, 0.6) 210px,
+                            rgba(0, 0, 0, 0.6) 215px,
+                            transparent 215px,
+                            transparent 220px,
+                            rgba(0, 0, 0, 0.6) 220px,
+                            rgba(0, 0, 0, 0.6) 225px,
+                            transparent 225px), 
+
+                        /* wrapper */ 
+                        linear-gradient(to right, 
+                            transparent 12px, 
+                            rgba(135, 214, 120, 0.6) 12px, 
+                            rgba(135, 214, 120, 0.6) 238px, 
+                            transparent 12px), 
+                            
+                        /* crayon shading */    
+                        linear-gradient(to bottom,
+                            transparent 62%,
+                            rgba(0, 0, 0, 0.3) 100%);   
+
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+/* left triangle of crayon */
+
+div::before {
+    height: 10px; 
+    left: -48px; 
+    top: 2px; 
+    border-right: 48px solid #237449;
+    border-bottom: 13px solid transparent;
+    border-top: 13px solid transparent;
+
+    /* to display the psuedo element */ 
+    content: ''; 
+    position: absolute; 
+    display: block; 
+}
+
+
+/* reflective gloss */ 
+
+div::after {
+    width: 250px; 
+    height: 23px; 
+    content: '';
+    color: rgba(0, 0, 0, 0.3);
+  
+    left: -47px; 
+    padding-right: 47px;
+    padding-top: 17px;
+    background-image: 
+                        linear-gradient(to right,
+                            transparent 46px,
+                            rgba(0,0,0,0.3) 48px,
+                            transparent 48px),
+                        linear-gradient(to bottom,
+                            rgba(255,255,255,0) 12px,
+                            rgba(255,255,255,0.2) 17px,
+                            rgba(255,255,255,0.2) 19px,
+                            rgba(255,255,255,0) 24px);
+}
+
