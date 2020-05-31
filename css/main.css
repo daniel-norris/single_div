@@ -11,27 +11,76 @@
 
 div {
 
-    width: 70px; 
-    height: 250px; 
-    background: darkgrey;
+    width: 75px; 
+    height: 275px; 
+    background-color: rgba(44,44,44,1) 20%;
     position: absolute; 
     top: 25%; 
     left: 45%; 
+  
 
-    border-radius: 50% 50% 50% 50% / 3% 3% 3% 3%;
+    background: linear-gradient(to bottom, 
+                rgba(132,132,132,1) 2%, 
+                rgba(16,16,16,1) 8%, 
+                rgba(16,16,16,1) 19%, 
+                rgba(44,44,44,1) 20%, 
+                rgba(44,44,44,1) 22%, 
+                rgba(16,16,16,1) 23%, 
+                rgba(16,16,16,1) 77%, 
+                rgba(44,44,44,1) 78%, 
+                rgba(44,44,44,1) 80%, 
+                rgba(16,16,16,1) 81%, 
+                rgba(16,16,16,1) 96%, 
+                rgba(41,41,41,1) 100%); 
+
+    border-radius: 50% 50% 50% 50% / 2% 2% 2% 2%;
+
+
+    /* box-shadow:  */
+    
+                /* strap */ 
+/*                 
+                0px 258px 0px 0px rgb(44, 44, 44, 1),
+                0px 249px 0px 0px rgb(44, 44, 44, 1),
+                0px 240px 0px 0px rgb(44, 44, 44, 1),
+                0px 231px 0px 0px rgb(44, 44, 44, 1),
+                0px 222px 0px 0px rgb(44, 44, 44, 1),
+                0px 213px 0px 0px rgb(44, 44, 44, 1),
+                0px 204px 0px 0px rgb(44, 44, 44, 1),
+                0px 195px 0px 0px rgb(44, 44, 44, 1),
+
+                0px 72px 0px 0px rgb(44, 44, 44, 1),
+                0px 63px 0px 0px rgb(44, 44, 44, 1),
+                0px 54px 0px 0px rgb(44, 44, 44, 1),
+                0px 45px 0px 0px rgb(44, 44, 44, 1),
+                0px 36px 0px 0px rgb(44, 44, 44, 1),
+                0px 27px 0px 0px rgb(44, 44, 44, 1),
+                0px 18px 0px 0px rgb(44, 44, 44, 1), 
+                0px 10px 0px 0px rgb(44, 44, 44, 1);
+
+           */
+
+
+
+                
+                
 }
 
 
 /* strap */
 
-div::after {
+div::before {
     content: ""; 
+    /* font-family: arial; 
+    color: rgb(207, 207, 207); 
+    font-size: 50%; 
+    text-align: center; */
     width: 150px;
     height: 150px; 
-    border-radius: 50%; 
+    
     position: absolute; 
-    right: -40px; 
-    top: 45px; 
+    right: -37.5px; 
+    top: 62.5px; 
 
     background-image: 
     
@@ -51,8 +100,33 @@ div::after {
                         rgba(0,0,0,1) 66%, 
                         rgba(57,57,57,1) 66%, 
                         rgba(57,57,57,1) 69%, 
-                        rgba(36,36,36,1) 69%);
+                        rgba(36,36,36,1) 69%, 
+                        transparent 69%);
 
-    
 
 } 
+
+div::after {
+    content: "";
+    position: absolute; 
+    left: -92.5px; 
+    top: -110px; 
+    width: 35px; 
+    height: 2px; 
+    box-shadow: 112.5px 113px 0px .3px #2b2b2b,
+                112.5px 112px 0px .9px #000,
+                112.5px 120px 0px 1px #2b2b2b,
+                112.5px 119px 0px 2px #000,
+                112.5px 118.5px 0px 2px #ffffff62,
+                112.5px 128px 0px 1.5px #2b2b2b,
+                112.5px 127px 0px 2.5px #000,
+                112.5px 126.5px 0px 2.5px #ffffff62,
+                112.5px 138.5px 0px 2px #2b2b2b,
+                112.5px 137px 0px 3px #000000,
+                112.5px 136px 0px 3px #ffffff62,
+                112.5px 151.5px 0px 2.5px #2b2b2b,
+                112.5px 150px 0px 3.5px #000000,
+                112.5px 149px 0px 3.5px #ffffff62;
+
+    border-radius: 50% 50% 50% 50% / 24% 24% 24% 24%;
+}
